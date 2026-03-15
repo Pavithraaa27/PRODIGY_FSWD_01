@@ -31,6 +31,7 @@ app.post('/login', async (req, res) => {
   res.json({ token });
 });
 
+
 app.get('/dashboard', (req, res) => {
   const auth = req.headers.authorization;
   if (!auth) return res.sendStatus(401);
