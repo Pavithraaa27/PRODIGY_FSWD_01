@@ -8,7 +8,6 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-
 const users = JSON.parse(fs.readFileSync('./users.json', 'utf-8'));
 
 app.post('/register', async (req, res) => {
